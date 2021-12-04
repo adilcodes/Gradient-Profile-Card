@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    position: relative;
+    width: 400px;
+    height: 240px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.4);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+.card .c1, .c2, .c3{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(109px);
+}
+.c1{
+    background-color: yellow;
+    top: 67px;
+    left: -54px;
+    width: 347px;
+    height: 275px;
+}
+.c2{
+    background-color: rgb(240, 6, 84);
+    top: -84px;
+    left: -46px;
+    width: 298px;
+    height: 251px;
+}
+.c3{
+    background-color: rgb(17, 156, 248);
+    top: -73px;
+    left: 194px;
+    width: 433px;
+    height: 421px;
+}
+.card img{
+    width: 110px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    left: 13px;
+}
+.card .name{
+    position: absolute;
+    color: #121428;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    top: 26px;
+    left: 137px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.card .role{
+    position: absolute;
+    color: #121428;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    top: 67px;
+    left: 137px;
+}
+.card .description{
+    position: absolute;
+    color: #121428;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    top: 138px;
+    left: 20px;
+}
+ul{
+    position: absolute;
+    z-index: 1;
+    list-style-type: none;
+    top: 96px;
+    left: 134px;
+}
+ul li{
+    color: #121428;
+    padding: 0px 5px;
+    display: inline;
+    font: 15px;
+    cursor: pointer;
+    transition: .6s ease;
+}
+ul li:hover{
+    color: #fff;
+}
+.hire{
+    position: absolute;
+    width: 121px;
+    height: 30px;
+    background: #fff;
+    z-index: 1;
+    right: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: verdana;
+    font-weight: 600;
+    transform: rotate(45deg);
+    top: 12px;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+.hire:hover{
+    background-color: #333;
+    color: #fff;
+}
